@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background: #0a0a10;
+}
+main {
+  display: flex; /* determina que todos os itens da div sejam lado a lado*/
+  flex-direction: column;
+  padding: 15px 0px;
+  max-width: 414px;
+  min-height: 100vh;
+  gap: 12px; /* aplica espaços iguais entre os itens quando utilizado display flex*/
+  position: relative;
+  align-items: center;
+}
+
+.blur {
+  /* dará o efeito de luz no fundo da imagem*/
+  width: 414px;
+  height: 280px;
+  background: #25f3e9;
+  position: absolute;
+  z-index: -1; /* posiciona elementos na tela para trás */
+  opacity: 0.25px; /* determina a opacidade do elemento*/
+  filter: blur(240px); /* aplique efeitos gráficos*/
+}
+h1 {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33px;
+  text-align: center;
+  margin: 50px;
+}
+.container-inputs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  
+ 
+}
+label{
+font-size: 20px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: -0.40799999237060547px;
+color: #ffffff;
+margin-bottom: 10px;
+
+}
+input{
+  width: 342px;
+  height: 30px;
+  margin-bottom: 25px;
+  outline: none ;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;;
+  color: #ffffff;
+  font-size: 20px;
+}
+button {
+  width: 342px;
+  height: 60px;
+  gap: 14px;
+  opacity: 0px;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 70px;
+}
+
+.login{
+  background-color: rgb(206, 14, 14);
+  border-radius: 10px;
+  
+}
+.login:hover{
+  opacity: 0.8;
+}
+.google{
+  background-color: #444449;
+  border-radius: 10px;
+}
+.google:hover{
+  opacity: 0.8;
+}
+a{
+  position: relative;
+  color: #25f3e9;
+  text-decoration: none;
+}
+
+a::after{
+  content: "";
+  width: 0;
+  height: 2px;
+  transition: 0.3s ease;
+}
+a:hover::after{
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  background: #25f3e9;
+  bottom: -3px;
+  left: 0;
+ 
+}
+span{
+  color: #ffffff;
+}
